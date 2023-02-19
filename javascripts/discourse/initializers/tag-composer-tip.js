@@ -19,7 +19,7 @@ export default {
             for (const rule of tagSet) {
               if (topicTags.includes(rule.tag_name)) {
                 if (rule.hide_for_OP && model?.topic?.user_id === curUser?.id) {continue;}
-                if (rule.hide_for_replier && model?.topic?.posted) {continue;}
+                if (rule.hide_for_replyer && model?.topic?.posted) {continue;}
                 if (settings.show_modal_instead_of_summary) {
                   const tip = document.getElementById("topic-tag-desc");
                   const btn = document.createElement('a');
