@@ -1,8 +1,17 @@
-.topic-tag-desc-container {
+.tag-composer-tip-item {
     text-align: right;
     font-style: italic;
     color: var(--primary-medium);
     padding-right: 3px;
+}
+button.tag-composer-tip-btn {
+    color: var(--tertiary-medium);
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 .composer-tag-tip-modal-body {
     max-width: 600px;
