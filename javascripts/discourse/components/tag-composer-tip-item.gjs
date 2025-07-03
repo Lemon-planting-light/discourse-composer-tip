@@ -54,8 +54,7 @@ export default class TagComposerTipItem extends Component {
   }
 
   get showModalInsteadOfSummary() {
-    return true;
-    // return settings.show_modal_instead_of_summary;
+    return settings.show_modal_instead_of_summary;
   }
 
   @action
