@@ -21,11 +21,11 @@ export default class TagComposerTipItem extends Component {
   }
 
   get composer() {
-    return this.args.model.composer;
+    return this.args.model?.composer;
   }
 
   get topic() {
-    return this.composer.topic;
+    return this.composer?.topic;
   }
 
   get shouldRender() {
@@ -33,6 +33,12 @@ export default class TagComposerTipItem extends Component {
       // do nothing;
     }
     if (!this.currentUser) {
+      return false;
+    }
+    if (!this.composer) {
+      return false;
+    }
+    if (!this.topic) {
       return false;
     }
     if (
